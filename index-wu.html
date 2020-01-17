@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <!-- 引入公共样式的css 文件 -->
+    <link rel="stylesheet" type="text/css" href="css/bei-wu.css"/>
+    <!-- 引入car css -->
+    <link rel="stylesheet" type="text/css" href="css/bei-liu.css"/>
+	<link rel="stylesheet" type="text/css" href="font-s/css/font-awesome.css"/>
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+    <!-- 先引入jquery  -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 在引入我们自己的js文件 -->
+    <script src="js/JQuery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/axios.min.js"></script>
+</head>
+<body>
+	<div class="header_wrap">
+			<div class="header">
+				<div class="header_ove"></div>
+				<ul class="header_two">
+					<a href="index-liu.html" class="header_three">您好,&nbsp; 请登录</a>
+					<a href="index-three.html" class="header_ove_a">免费注册</a>
+					<li class="header_si">商家入驻</li>
+					<li class="header_wu">
+						贝贝商家中心
+						<a href="" class="header_wu_a">友团商家中心</a>
+						<a href="" class="header_wu_aa">贝仓商家中心</a>
+						<a href="" class="header_wu_aaa">供应商中心</a>
+		
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</li>
+		
+					<li class="header_liu">
+						帮助中心
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+						<div class="panel">
+							联系客服
+							<img src="img/tu1.png" class="tuo">
+						</div>
+					</li>
+		
+		
+					<li class="header_qi">
+						<p class="header_qi_p">
+							关注
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+							<div class="header_qi_xia">
+								<p>微信号:beibieclub</p>
+								<img src="img/40450807220001_158x158.jpg" class="header_qi_xia_1">
+								<span>订阅贝贝官方微信</span>
+								<img src="img/weibo_45x45.png" class="header_qi_xia_2">
+								<img src="img/weibo_45x45.png" class="header_qi_xia_3">
+							</div>
+						</p>
+						<em>廉政举报</em>
+					</li>
+					<img src="img/tu1.png" class="tu">
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!-- 头部-->
+		<div class="nav_wrap_1">
+		<div class="nav">
+			<a href="index-ove.html">
+			<img src="img/113f25eac3906f0d_114x60.jpg" class="nav_ove">
+			</a>
+			<img src="img/tu5.png" class="nav_two">
+			<div class="nav_three">
+				<p>我的购物车
+					<i class="fa fa-angle-down" aria-hidden="true"></i>
+				</p>
+				<div class="nav_si">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				</div>
+				<div class="nav_three_1">
+					<i class="nav_three_1_p">赶快去挑选商品吧</i>
+					<div class="nav_three_2">
+						<i>小计 : </i>
+						<h5>&nbsp;¥</h5>
+						<h6>&nbsp;0.00</h6>
+						<div class="nav_three_3">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<h4>去购物车结算</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="car-header">
+     </div>
+    </div>
+
+    </div>
+    <div class="c-container">
+        <div class="w">
+            <div class="cart-filter-bar">
+                <em>您的购物商品</em>
+            </div>
+            <!-- 购物车主要核心区域 -->
+            <div class="cart-warp">
+                <!-- 头部全选模块 -->
+                <div class="cart-thead">
+                    <div class="t-checkbox">
+                        <input type="checkbox" name="" id="" class="checkall"> 全选
+                    </div>
+                    <div class="t-goods">商品</div>
+                    <div class="t-price">单价</div>
+                    <div class="t-num">数量</div>
+                    <div class="t-sum">小计</div>
+                    <div class="t-action">操作</div>
+                </div>
+                <!-- 商品详细模块 -->
+                <div class="cart-item-list">
+                    <div class="cart-item check-cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" checked class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="img/jing13.jpg" class="p-img-1">
+                            </div>
+                            <div class="p-msg">Dr. Ci:Labo 城野医生 海洋胶原卓效滋养啫喱EX面霜 50克</div>
+                        </div>
+                        <div class="p-price">￥12.60</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥12.60</div>
+                        <div class="p-action"><a href="javascript:;">删除</a></div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="img/jing14.jpg" alt="" class="p-img-2">
+                            </div>
+                            <div class="p-msg">城野医生日本化妆水100ml*2瓶毛孔细致收缩化妆水 清爽保湿控油爽肤水</div>
+                        </div>
+                        <div class="p-price">￥24.80</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥24.80</div>
+                        <div class="p-action"><a href="javascript:;">删除</a></div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="img/jing15.jpg" alt="" class="p-img-3">
+                            </div>
+                            <div class="p-msg">德国原装 德国喜宝婴幼儿益生菌奶粉段次任选*1盒</div>
+                        </div>
+                        <div class="p-price">￥29.80</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥29.80</div>
+                        <div class="p-action"><a href="javascript:;">删除</a></div>
+                    </div>
+                </div>
+
+                <!-- 结算模块 -->
+                <div class="cart-floatbar">
+                    <div class="select-all">
+                        <input type="checkbox" name="" id="" class="checkall">全选
+                    </div>
+                    <div class="operation">
+                        <a href="javascript:;" class="remove-batch"> 删除选中的商品</a>
+                        <a href="javascript:;" class="clear-all">清理购物车</a>
+                    </div>
+                    <div class="toolbar-right">
+                        <div class="amount-sum">已经选<em>1</em>件商品</div>
+                        <div class="price-sum">总价： <em>￥</em></div>
+                      <div class="btn-area">去结算</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+	
+<!-- 尾部 -->	
+	<div class="bei">
+		<div class="bei_ove">
+			<a href="">首页</a>
+			<a href="">关于贝贝</a>
+			<a href="">商家入驻</a>
+			<a href="">正品保证</a>
+			<a href="">人才招聘</a>
+			<a href="">联系我们</a>
+			<a href="">帮助中心</a>
+			<a href="">友情链接</a>
+			<a href="">手机客户端</a>
+			<a href="">客服在线</a>
+			<a href="">贝贝公益</a>
+			<a href="">品质健康</a>
+			<a href="">育儿社区</a>
+			<a href="" class="bei_ove_a">隐私协议</a>
+		</div>
+	</div>
+	
+	<!-- 尾部 -->
+	<div class="fooder">
+		<p class="fooer_wei">浙ICP备14025287号 |
+			食品流通许可证：SP3301041510054925 |
+			出版物经营许可证：新出发零字第00086号 |
+			知识产权|
+			<i class="fooer_ove">浙公网安备 33010402000616号</i>
+			<img src="img/e514feb48b7d253d_22x26.png">
+		</p>
+		<span class="fooer_wang">© 2014-2019 杭州贝购科技有限公司 All Rights Reserved. 客服热线：0571-10107788</span>
+	</div>
+	
+</body>
+<script>
+    let products = null
+    let countPrice = document.querySelector('.price-sum')
+    let allSel = document.querySelector('.checkall')
+    //获取所有购物车商品
+    axios.get('http://47.104.244.134:8080/cartlist.do',{params:{
+        token:3
+    }}).then((data)=>{
+        console.log(data.data)
+        products = data.data
+        let html = ''
+        let prolist = document.querySelector('.cart-item-list')
+        //循环遍历展示
+        for(let v of data.data){
+            html += `
+            <div class="cart-item">
+				    <div class="p-checkbox">
+					<input data-pid="${v.gid}" type="checkbox" name="" id="" class="j-checkbox">
+				    </div>
+				    <div class="p-goods">
+				        <div class="p-img">
+				            <img src="${v.goods.picurl}" alt="">
+				        </div>
+				        <div class="p-msg">${v.goods.name}</div>
+				    </div>
+				    <div class="p-price">￥${v.goods.price}</div>
+				    <div class="p-num">
+				        <div class="quantity-form">
+				            <a data-id='${v.id}' data-pid="${v.gid}" href="javascript:;" class="decrement">-</a>
+				            <input type="text" class="itxt" value="${v.count}">
+				            <a data-id='${v.id}' data-pid="${v.gid}" href="javascript:;" class="increment">+</a>
+				        </div>
+				    </div>
+				    <div class="p-sum">￥${v.goods.price*v.count}</div>
+				    <div onclick="deleteProduct(${v.id},${v.gid},event)" class="p-action"><a href="javascript:;">删除</a></div>
+				</div>
+            `
+        }
+        prolist.innerHTML = html
+        //获取所有的加号,减号,商品数量文本框,选择框
+		let addBtns = document.querySelectorAll('.increment')
+		let subBtns = document.querySelectorAll('.decrement')
+		let pnumIpts = document.querySelectorAll('.itxt')
+        let selectItems = document.querySelectorAll('.j-checkbox')
+        //循环遍历所有按钮
+        for(let i=0;i<addBtns.length;i++){
+            //添加点击事件
+            addBtns[i].onclick = function(){
+                let pid = this.getAttribute('data-pid')
+                let id = this.getAttribute('data-id')
+                let pnumIpts = this.parentNode.querySelector('.itxt')
+                let num = parseInt(pnumIpts.value) + 1
+ 
+                pnumIpts.value = num
+                let that = this
+                axios.get('http://47.104.244.134:8080/cartupdate.do',{
+                    params:{
+                        id:id,
+                        gid:pid,
+                        num:1,
+                        token:3
+                    }
+                }).then((data)=>{
+                    console.log(data)
+                    let resArr = products.filter(v => v.checked === true)
+					let counts = 0
+					resArr.forEach(v => counts += v.count * v.goods.price)
+					let pobj = products.filter(v => v.gid == pid)
+					if (pobj[0].checked === true) {
+						countPrice.innerHTML = (counts + parseFloat(pobj[0].goods.price))
+					}
+					//计算小计方法
+					//for(let i=0;i<products.length;i++){
+                    pobj[0].count = num
+                    
+                    let xiaoji = that.parentNode.parentNode.parentNode.querySelector('.p-sum')
+                   
+					xiaoji.innerHTML ='￥' + parseFloat(pobj[0].goods.price * pobj[0].count)
+                })
+            }
+            subBtns[i].onclick = function(){
+                let pid = this.getAttribute('data-pid')
+                let id = this.getAttribute('data-id')
+                let pnumIpts = this.parentNode.querySelector('.itxt')
+				let num = parseInt(pnumIpts.value) - 1
+				if(pnumIpts.value == 1){
+					return;
+				}
+                console.log(num)
+                pnumIpts.value = num
+                let that = this
+                axios.get('http://47.104.244.134:8080/cartupdate.do',{
+                    params:{
+                        id:id,
+                        gid:pid,
+                        num:-1,
+                        token:3
+                    }
+                }).then((data)=>{
+                    console.log(data)
+                    let resArr = products.filter(v => v.checked === true)
+					let counts = 0
+					resArr.forEach(v => counts += v.count * v.goods.price)
+                    let pobj = products.filter(v => v.gid == pid)
+                    console.log(pobj)
+					if (pobj[0].checked === true) {
+						countPrice.innerHTML = (counts + parseFloat(pobj[0].goods.price))
+					}
+					//计算小计方法
+                    pobj[0].count = num
+                    
+                    let xiaoji = that.parentNode.parentNode.parentNode.querySelector('.p-sum')
+                   
+					xiaoji.innerHTML ='￥' + parseFloat(pobj[0].goods.price * pobj[0].count)
+                })
+            }
+            selectItems[i].onclick = function() {
+			    //获取pid
+				let pid = this.getAttribute('data-pid')
+			    //获取当前商品对象
+				let pobj = products.find(v => v.gid == pid)
+				//把选择框的checked属性成为商品对象的属性
+				pobj.checked = this.checked
+				let resArr = products.filter(v => v.checked === true)
+				let counts = 0
+				resArr.forEach(v => counts += v.count * v.goods.price)
+				countPrice.innerHTML = counts
+				let isAllSelected = products.every(v => v.checked === true)
+				allSel.checked = isAllSelected
+			}
+        }
+        //全选按钮事件
+			allSel.onclick = function() {
+               
+                let selectItems = document.querySelectorAll('.j-checkbox')
+                console.log(selectItems)
+				for (let i = 0; i < selectItems.length; i++) {
+					selectItems[i].checked = this.checked
+					products[i].checked = this.checked
+				}
+				let resArr = products.filter(v => v.checked === true)
+				let counts = 0
+				resArr.forEach(v => counts += v.count * v.goods.price)
+				countPrice.innerHTML = counts
+			}
+    })
+
+    //删除按钮方法
+			function deleteProduct(id,gid,e) {
+				axios.get('http://47.104.244.134:8080/cartupdate.do',{
+                    params:{
+                        id:id,
+                        gid:gid,
+                        num:0,
+                        token:3
+                    }
+                }).then((data)=>{
+                    console.log(data)
+                    e.target.parentNode.parentNode.remove()
+					// location.reload();
+                    products = products.filter(v => v.gid != pid)
+						console.log(products)
+						//计算总价方法
+						let resArr = products.filter(v => v.checked === true)
+						let counts = 0
+						resArr.forEach(v => counts += v.count * v.goods.price)
+						countPrice.innerHTML = counts
+                })
+			}
+</script>
+</html>

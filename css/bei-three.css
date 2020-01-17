@@ -1,0 +1,299 @@
+.header_ove{
+	width: 1080px;
+	height: 105px;
+	margin: 0 auto;
+	padding-top: 45px;
+}
+.header_two{
+		display: block;
+	   background: url(../img/113f25eac3906f0d_114x60.jpg)no-repeat 0 0 #fff;
+	    height: 60px;
+	    position: relative;
+	    width: 114px;
+		float: left;
+}
+.header_three{
+	display: block;
+	background: url(../img/tu10)no-repeat 0 3px #fff;
+	height: 30px;
+	position: relative;
+	line-height: 30px;
+	width: 360px;
+	margin-top: 20px;
+	float: right;
+}
+.nav_wrap{
+	width: 1080px;
+	overflow: hidden;
+	height: 600px;
+	padding: 50px 0;
+	margin: 0 auto;
+}
+.nav_wrap_two{
+	color: #666;
+	width: 400px;
+	border: 1px solid #ececec;
+	border-top: 2px solid #ff4965;
+	float: right;
+}
+
+.nav_wrap_ove{
+	width: 500px;
+	height: 354px;
+	position: relative;
+	left: 50px;
+	background: url(../img/jing15.png)no-repeat;
+	float: left;
+}
+
+
+.nav_wrap_three{
+	height: 390px;
+	padding: 50px 35px;
+}
+.nav_wrap_si{
+	font-size: 14px;
+	color: #000;
+	font-weight: 700;
+	margin-bottom: 30px;
+
+}
+.nav_wrap_span{
+	font-size: 12px;
+	font-weight: 400;
+	color: #666;
+	float: right;
+}
+.nav_wrap_span span{
+	float:left;
+	margin-right: 8px;
+}
+.nav_wrap_span a{
+	color: red;
+	float: right;
+}
+.wrap_ove{
+	margin-top: 15px;
+}
+.wrap_two{
+	display: block;
+	border: 1px solid #e6e6e6;
+	border-radius: 2px;
+	padding-left: 30px;
+	position: relative;
+}
+
+.wrap_two  i{
+	position: absolute;
+	left: 8px;
+	top: 6px;
+	border-right: 1px solid #e6e6e6;
+	padding-right:7px;
+}
+.wrap_two_input{
+	height: 30px;
+	font-size: 12px;
+	width: 278px;
+	color: #666;
+	line-height: 30px;
+	border: 0;
+	outline: 0;
+	padding: 0 10px;
+	background: 0 0;
+	position: relative;
+}
+
+.duan_ove{
+	margin-top: 15px;
+}
+.duan_two{
+	display: inline-block;
+	border: 1px solid #e6e6e6;
+	border-radius: 2px;
+	padding-left: 30px;
+	position: relative;
+}
+.duan_two i{
+	position: absolute;
+	left: 8px;
+	top: 6px;
+	border-right: 1px solid #e6e6e6;
+	padding-right: 7px;
+	font-size: 16px;
+}
+#duan_three{
+	height: 30px;
+	font-size: 12px;
+	width: 190px;
+	color: #666;
+	line-height: 30px;
+	border: 0;
+	outline: 0;
+	padding: 0 0;
+	text-align: center;
+	background: 0 0;
+}
+#duan_si{
+	padding: 5px;
+	float: right;
+}
+#code{
+	padding: 6px;
+	font-style:italic;  
+	font-weight:bold;  
+	border:0;  
+	letter-spacing:2px;  
+	color:blue;
+
+}
+
+
+.foo{
+	margin-top: 15px;
+}
+.foo_ove{
+	display: block;
+	border: 1px solid #e6e6e6;
+	border-radius: 2px;
+	padding-left: 30px;
+	position: relative;
+	margin-bottom: 15px;
+}
+.foo em{
+	position: absolute;
+	display: block;
+	left: 12px;
+	top: 8px;
+	border-right: 1px solid #e6e6e6;
+	padding-right: 10px;
+	color: silver;
+	font-size: 14px;
+}
+.foo_two{
+	height: 30px;
+	font-size: 12px;
+	width: 278px;
+	color: #666;
+	line-height: 30px;
+	border: 0;
+	outline: 0;
+	padding: 0 10px;
+	background: 0 0;
+}
+
+.zhu_voe{
+	margin-top: 15px;
+}
+.zhu_two{
+	color: #fff;
+	background: #ff4965;
+	display: block;
+	width: 330px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 6px;
+}
+.yan_wrap{
+	margin-top: 15px;
+}
+.yan_wrap_ove{
+	box-sizing: border-box;
+	padding: 0;
+}
+.yang_wrap_two{
+	float: right;
+}
+
+
+
+.fooder_ove{
+	margin-top: 15px;
+	color: #666;
+}
+.fooder_two{
+	margin-top: 15px;
+	color: #666;
+	float: left;
+}
+.fooder_two div{
+	color: red;
+	float: right;
+	font-size: 14px;
+}
+.fooder_three{
+	float: left;
+	color: #666;
+	margin-top: 15px;
+	line-height: 25px;
+}
+.fooder_three a{
+	width: 25px;
+	height: 24px;
+	margin: 0 5px;	
+	background: url(../img/jing16.png)no-repeat;
+	background-position: 1px 0;
+	float: right;
+}
+
+
+.bei {
+	height: 41px;
+	background: #555555;
+	border-top: 3px solid #FF5482;
+}
+
+.bei_ove {
+	width: 1080px;
+	height: 41px;
+	margin: 0 auto;
+	background: #555555;
+}
+
+.bei_ove a {
+	display: block;
+	margin-top: 13px;
+	color: #ddd;
+	padding: 0px 12px;
+	border-right: 1px solid #ddd;
+	float: left;
+}
+
+.bei_ove .bei_ove_a {
+	border-right: none;
+}
+
+.fooder {
+	width: 1080px;
+	height: 120px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.fooer_wei {
+	text-align: center;
+	color: silver;
+	position: relative;
+}
+
+.fooer_ove {
+	margin-left: 20px;
+	color: silver;
+}
+
+.fooer_wei img {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 296px;
+	top: -1px;
+}
+
+.fooer_wang {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+	color: silver;
+}
